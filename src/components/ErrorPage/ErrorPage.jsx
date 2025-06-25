@@ -1,15 +1,14 @@
-import React from 'react';
-import { useRouteError } from 'react-router-dom';
+
+
 
 const ErrorPage = () => {
-    const error = useRouteError();
-    console.log(error)
+    
     return (
-        <div>
-            <h2>404</h2>
-            <p>{error.statusText || error.message}</p>
+        <div className="flex text-center justify-center pt-36">
+            <h2 className="text-5xl">Oops!!! 404 Page Not Found !!!</h2>
+            
         </div>
     );
 };
 
-export default 404;
+export default ErrorPage;
