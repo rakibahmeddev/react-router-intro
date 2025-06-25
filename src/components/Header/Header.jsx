@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
     return (
@@ -7,15 +8,12 @@ const Header = () => {
              <Link className='cursor-pointer text-2xl font-bold' to='/'>Navbar</Link>
             <nav>
                 <ul className='flex space-x-4 cursor-pointer'>
-                    <li>
-                        <Link to='/'>Home</Link>
-                    </li>
-                    <li>
-                    <Link to='/about'>About</Link>
-                    </li>
-                    <li><Link to="/posts">Posts</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/users">Users</Link></li>
+                   
+                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/posts">Post</NavLink>
+                    <NavLink to="/users">Users</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </ul>
             </nav>
         </div>
